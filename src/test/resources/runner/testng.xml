@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+	<listener class-name="extentlisteners.ExtentListeners" />
+	<listener class-name="extentlisteners.CustomListener" />
+	<listener class-name="org.uncommons.reportng.HTMLReporter" />
+	</listeners>
+
+  <test thread-count="5" name="Test Home Page">
+    <classes>
+      <class name="testcases.HomePageTest"/>
+    </classes>
+  </test> <!-- Test -->
+    <test thread-count="5" name="Test New Car Page">
+    <classes>
+       <class name="testcases.NewCarPageText"/>
+    </classes>
+  </test> <!-- Test -->
+    <test thread-count="5" name="Test Maruti page">
+    <classes>
+      <class name="testcases.MarutiHomePageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

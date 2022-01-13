@@ -1,0 +1,4 @@
+2022/01/13 14:06:05 INFO  base.BaseTest  - initializing Browser: Edge
+2022/01/13 14:06:07 INFO  base.BaseTest  - Opening  URL:https://www.cardekho.com/
+2022/01/13 14:06:11 INFO  base.BaseTest  - Test Completed
+2022/01/13 14:06:11 INFO  base.BaseTest  - Test Completed
