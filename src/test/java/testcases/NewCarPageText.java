@@ -15,8 +15,7 @@ public class NewCarPageText extends BaseTest {
 		initialSetUp();
 		HomePage homepage= new HomePage(driver);
 		homepage.gotoNewCarTab();
-		NewCarPage newcarpage= new NewCarPage(driver);
-		
+		//NewCarPage newcarpage= new NewCarPage(driver);
 		
 		
 		

@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 import base.BasePage;
 
+
 public class NewCarPage extends BasePage{
 	//public WebDriver driver;
 	
@@ -16,24 +17,24 @@ public class NewCarPage extends BasePage{
 	}
 	
 	@FindBy(linkText= "Maruti")
-	public WebElement linkMaruti;
+	private WebElement linkMaruti;
 	
 	
 	@FindBy(linkText= "Hyundai")
-	public WebElement linkHyundai;
+	private WebElement linkHyundai;
 	
 	
 	@FindBy(linkText= "Honda")
-	public WebElement linkHonda;
+	private WebElement linkHonda;
 	
 	
 	@FindBy(linkText= "Tata")
-	public WebElement linkTata;
+	private WebElement linkTata;
 	
-	public void gotoMarutiPage()
+	public MarutiHomePage gotoMarutiPage()
 	{
 		linkMaruti.click();
-		//return new MarutiHomePage(driver);
+		return new MarutiHomePage(driver);
 		
 	}
 	

@@ -19,11 +19,11 @@ public class MarutiHomePageTest extends BaseTest{
 	public void gotoMarutiHomePage() throws IOException {
 		initialSetUp();
 		HomePage homepage= new HomePage(driver);
-		homepage.gotoNewCarTab();
-		NewCarPage carPage = new NewCarPage(driver);
-		carPage.gotoMarutiPage();
-		MarutiHomePage marutiPage = new MarutiHomePage(driver);
-		String carName = marutiPage.getCarName();
+		String carName = homepage.gotoNewCarTab().gotoMarutiPage().getCarName();
+		//NewCarPage carPage = new NewCarPage(driver);
+		//carPage.gotoMarutiPage();
+		//MarutiHomePage marutiPage = new MarutiHomePage(driver);
+		//String carName = marutiPage.getCarName();
 		Assert.assertEquals(carName, "Maruti Suzuki Cars");
 		
 	}

@@ -15,7 +15,7 @@ public class MarutiHomePage extends BasePage {
 	}
 	
 	@FindBy(xpath="//h1[contains(text(),'Cars')]")
-	WebElement carName;
+	private WebElement carName;
 	
 	public String getCarName()
 	{

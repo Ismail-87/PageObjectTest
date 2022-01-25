@@ -24,10 +24,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseTest {
 	public  WebDriver driver;
 	//public  Properties OR;
-	public static  Properties Login;
+	private static  Properties Login;
 	public  FileInputStream fis1, fis2;
-	public  Logger log = Logger.getLogger(BaseTest.class);
-	public String browser;
+	private  Logger log = Logger.getLogger(BaseTest.class);
+	private String browser;
 	public String screenshotpath;
 
 	public void initialSetUp() throws IOException {
