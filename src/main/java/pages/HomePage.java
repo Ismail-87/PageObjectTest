@@ -30,7 +30,7 @@ public class HomePage extends BasePage {
 	@FindBy(xpath="//span[text()='Search New Cars']")
 	private WebElement searchNewCar;
 	
-	@FindBy(xpath="//span[text()='Cardekho Used Cars']")
+	@FindBy(xpath="//a[@title='Cardekho Used Cars']")
 	private WebElement ddnUsedCarLink;
 	@FindBy(xpath="//span[text()='Used Car Valuation']")
 	private WebElement usedCarValuationLink;
@@ -42,7 +42,7 @@ public class HomePage extends BasePage {
 	
 	public NewCarPage gotoNewCarTab() {
 		WebElement newCarTab1 = driver.findElement(By.xpath("//a[@title='New Car']"));
-		new Actions(driver).moveToElement(newCarTab1).perform();
+		new Actions(driver).moveToElement(newCarTab1).build().perform();
 		searchNewCar.click();
 		return new NewCarPage(driver);
 		
@@ -50,14 +50,14 @@ public class HomePage extends BasePage {
 	
 	public UsedCarPage gotoUsedCarTab() {
 		WebElement usedCarTab1 = driver.findElement(By.xpath("//span[text()='USED CAR ']"));
-		new Actions(driver).moveToElement(usedCarTab1).perform();
+		new Actions(driver).moveToElement(usedCarTab1).build().perform();
 		ddnUsedCarLink.click();
 		return new UsedCarPage(driver);
 	}
 	
 	public SellCarPage gotoSellCarTab() {
 		WebElement sellCarTab1 = driver.findElement(By.xpath("//span[text()='Sell Car ']"));
-		new Actions(driver).moveToElement(sellCarTab1).perform();
+		new Actions(driver).moveToElement(sellCarTab1).build().perform();
 		usedCarValuationLink.click();
 		return new SellCarPage(driver);
 	}
